@@ -18,7 +18,7 @@ const actions = {
   }
 }
 
-consts getters = {
+const getters = {
 }
 
 export default {
