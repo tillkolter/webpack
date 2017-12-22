@@ -7,7 +7,12 @@ import App from './App'
 {{#router}}
 import router from './router'
 {{/router}}
+{{#vuex}}
+import store from '.store'
 
+Vue.use(Vuex)
+
+{{/vuex}}
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
@@ -22,5 +27,6 @@ new Vue({
   {{#if_eq build "standalone"}}
   template: '<App/>',
   components: { App }
-  {{/if_eq}}
+  {{/if_eq}}{{#vuex}},
+  store{{/vuex}}
 })
