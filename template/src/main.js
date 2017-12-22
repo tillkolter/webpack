@@ -8,6 +8,7 @@ import App from './App'
 import router from './router'
 {{/router}}
 {{#vuex}}
+import Vuex from 'vuex'
 import store from './store'
 
 Vue.use(Vuex)
